@@ -1,0 +1,442 @@
+.about-main {
+    background-image:
+    linear-gradient(to right, rgba(90, 55, 200, 0.9), rgba(90, 55, 200, 0.15) ), url("/images/about-image.jpg");
+        
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.about-main h3 {
+    background-color: #7956ff;
+    color: white;
+    width: 23%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.about-main h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.about-main p {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* END OF MAIN SECTION */
+
+.about-section {
+    background-color: white;
+    padding: 25px;
+}
+
+.about-content-img {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 23px;
+}
+
+.about-content-img  img{
+    width: 50%;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.about-content-who h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #f5f3ff;
+    color: #7956ff;
+    width: 32%;
+    border-radius: 50px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.about-content-who h1 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.about-content-who p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #666;
+}
+
+.about-content-who .about-content-btn {
+    background-color: #7956ff;
+    color: white;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s ease;
+    margin-top: 20px;
+}
+
+.about-content-who .about-content-btn:hover {
+    background-color: #5b21b6;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 900px) {
+
+    .about-section {
+        padding: 30px 20px;
+    }
+
+    .about-content-img {
+        gap: 25px;
+        padding: 10px;
+    }
+
+    .about-content-img img {
+        width: 50%;
+        height: 400px;
+    }
+
+    .about-content-who h3 {
+        width: 45%;
+        font-size: 0.9rem;
+    }
+
+    .about-content-who h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-content-who p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+}
+
+
+/* ========================= */
+/* SMALL TABLET */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    .about-section {
+        padding: 30px 15px;
+    }
+
+    .about-content-img {
+        gap: 20px;
+    }
+
+    .about-content-img img {
+        height: 350px;
+    }
+
+    .about-content-who h3 {
+        width: 55%;
+    }
+
+    .about-content-who h1 {
+        font-size: 1.6rem;
+    }
+
+    .about-content-who p {
+        font-size: 0.95rem;
+    }
+
+}
+
+
+/* ========================= */
+/* PHONE */
+/* ========================= */
+
+@media (max-width: 600px) {
+
+    .about-section {
+        padding: 30px 15px;
+    }
+
+    .about-content-img {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 0;
+    }
+
+    .about-content-img img {
+        width: 100%;
+        height: 300px;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+
+    .about-content-who h3 {
+        width: fit-content;
+        font-size: 0.75rem;
+        padding: 6px 14px;
+        margin: 0;
+    }
+
+    .about-content-who h1 {
+        font-size: 1.7rem;
+        line-height: 1.2;
+        margin-top: 15px;
+    }
+
+    .about-content-who p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .about-content-who .about-content-btn {
+        font-size: 0.9rem;
+        padding: 9px 18px;
+        margin-top: 15px;
+    }
+
+}
+
+
+/* ========================= */
+/* SMALL PHONE */
+/* ========================= */
+
+@media (max-width: 400px) {
+
+    .about-section {
+        padding: 25px 12px;
+    }
+
+    .about-content-img {
+        gap: 20px;
+    }
+
+    .about-content-img img {
+        height: 250px;
+    }
+
+    .about-content-who h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-content-who p {
+        font-size: 0.9rem;
+    }
+
+    .about-content-who .about-content-btn {
+        width: 100%;
+    }
+
+}
+
+
+
+ /* ========================= */
+/* OUR MISSION */
+/* ========================= */
+
+.mission-container {
+    background-color: #f8f7ff;
+    padding: 50px 6%;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+/* Mission heading */
+.mission-content {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+}
+
+.mission-content h3 {
+    display: inline-block;
+    margin: 0 0 12px;
+
+    padding: 6px 14px;
+    border-radius: 20px;
+
+    background-color: #eeeaff;
+    color: #6941c6;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.mission-content h1 {
+    margin: 0 auto;
+
+    max-width: 700px;
+
+    color: #10234f;
+    font-size: 1.8rem;
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+
+/* Mission cards */
+.mission-card {
+    background-color: #ffffff;
+
+    padding: 30px 20px;
+
+    border-radius: 10px;
+
+    border: 1px solid #eeeeF5;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+
+    min-height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.3s ease;
+}
+
+
+/* Card hover */
+.mission-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+/* Mission icon */
+.mission-icon {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    background-color: #f0edff;
+    color: #6941c6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+}
+
+
+/* Card heading */
+.mission-card h2 {
+    margin: 0 0 8px;
+
+    color: #10234f;
+
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+
+/* Card paragraph */
+.mission-card p {
+    margin: 0;
+
+    color: #667085;
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 900px) {
+
+    .mission-container {
+        padding: 45px 5%;
+        gap: 20px;
+    }
+
+    .mission-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .mission-card {
+        padding: 25px 15px;
+    }
+}
+
+
+/* ========================= */
+/* PHONE */
+/* ========================= */
+
+@media (max-width: 600px) {
+
+    .mission-container {
+        grid-template-columns: 1fr;
+
+        padding: 40px 20px;
+
+        gap: 20px;
+    }
+
+    .mission-content {
+        margin-bottom: 5px;
+    }
+
+    .mission-content h3 {
+        font-size: 0.75rem;
+    }
+
+    .mission-content h1 {
+        font-size: 1.35rem;
+        line-height: 1.4;
+    }
+
+    .mission-card {
+        min-height: 160px;
+        padding: 25px 15px;
+    }
+
+    .mission-icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    .mission-card h2 {
+        font-size: 1rem;
+    }
+
+    .mission-card p {
+        font-size: 0.88rem;
+    }
+}
+
+
+

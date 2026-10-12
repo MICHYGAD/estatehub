@@ -1,0 +1,109 @@
+/* Main search container */
+.property-search {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0.4px auto 50px;
+  padding: 20px 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+  position: relative;
+  z-index: 2;
+}
+
+/* Search heading */
+.property-search h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #17133f;
+}
+
+/* Search fields layout */
+.search-fields {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Individual input wrapper */
+.search-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+  height: 45px;
+  padding: 0 12px;
+  border: 1px solid #d6d3df;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+/* Icons */
+.search-input svg {
+  color: #6042e8;
+  flex-shrink: 0;
+}
+
+/* Input and select fields */
+.search-input input,
+.search-input select {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+  color: #333333;
+}
+
+/* Focus effect */
+.search-input:focus-within {
+  border-color: #6042e8;
+}
+
+/* Search button */
+.search-fields button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 45px;
+  padding: 0 25px;
+  background-color: #6042e8;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search-fields button:hover {
+  background-color: #4930c5;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .property-search {
+    width: 90%;
+    margin-top: -2px;
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .search-fields {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .search-fields button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
