@@ -274,12 +274,21 @@ img {
     display: none;
   }
 
-  /* Hamburger button */
+  /* Hamburger and Close button */
 
-  .menu-toggle {
-    display: flex;
-    flex-shrink: 0;
-  }
+.menu-toggle {
+  display: flex;
+  flex-shrink: 0;
+
+  width: 46px;
+  height: 46px;
+}
+
+.menu-toggle svg {
+  width: 30px;
+  height: 30px;
+  stroke-width: 2.5;
+}
 
   /* Mobile dropdown */
 
@@ -400,8 +409,13 @@ img {
   }
 
   .menu-toggle {
-    width: 38px;
-    height: 38px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .menu-toggle svg {
+    width: 28px;
+    height: 28px;
   }
 
   .nav-links {

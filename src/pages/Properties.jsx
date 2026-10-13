@@ -384,15 +384,6 @@ const handlePropertySearch = (event) => {
       </p>
 
     </div>
-
-    <button
-      type="button"
-      className="view-all-properties"
-    >
-      View All Properties
-      <ArrowRight size={18} />
-    </button>
-
   </div>
 
 
